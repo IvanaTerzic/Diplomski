@@ -1,0 +1,40 @@
+Prediction and Applicability Domain analysis for model:
+BCF model (CAESAR) (version 2.1.15)
+(calculation core version : 1.3.18)
+
+No.	Id	SMILES	Assessment	Predicted BCF [log(L/kg)]	Predicted BCF [L/kg]	Predicted BCF from sub-model 1 (HM) [log(L/kg)]	Predicted BCF from sub-model 2 (GA) [log(L/kg)]	Predicted LogP (MLogP)	Experimental	Structural Alerts	ADI	Similarity index	Accuracy index	Concordance index	Max error index	Descriptors range check	ACF index	Remarks
+1	Molecule 1	c1ccc2c(c1)c4cccc3cccc2c34	2.71 log(L/kg) (EXPERIMENTAL value)	3.16	1437	3.05	3.08	4.68	2.71		1	1	0.447	0.447	0.447	True	1	-
+2	Molecule 2	c1cc2ccc3cccc4ccc(c1)c2c34	2.56 log(L/kg) (EXPERIMENTAL value)	3.16	1449	3.05	3.08	4.68	2.56		0.85	1	0.601	0.601	0.601	True	1	-
+3	Molecule 3	c3ccc4cc2c(ccc1ccccc12)cc4(c3)	2.54 log(L/kg) (EXPERIMENTAL value)	3.09	1237	3.04	2.96	5.09	2.54		0.85	1	0.552	0.552	0.552	True	1	-
+4	Molecule 4	c1ccc2c(c1)ccc3c4ccccc4(ccc23)	2.24 log(L/kg) (EXPERIMENTAL value)	3.09	1244	3.05	2.96	5.09	2.24		0.85	1	0.855	0.855	0.855	True	1	-
+5	Molecule 5	c1ccc4c(c1)ccc5c3cccc2cccc(c23)c45	2.97 log(L/kg) (GOOD reliability)	2.97	938	2.96	2.81	5.41	-		1	0.919	0.399	0.4	0.447	True	1	-
+6	Molecule 6	c1ccc3c(c1)cc5c2ccccc2c4cccc3c45	2.98 log(L/kg) (GOOD reliability)	2.98	959	2.98	2.81	5.41	-		1	0.919	0.399	0.4	0.447	True	1	-
+7	Molecule 7	c1ccc2cc3c5cccc4cccc(c3(cc2(c1)))c45	2.97 log(L/kg) (GOOD reliability)	2.97	926	2.96	2.81	5.41	-		1	0.919	0.399	0.4	0.447	True	1	-
+8	Molecule 8	c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45	2.69 log(L/kg) (EXPERIMENTAL value)	2.98	950	2.97	2.81	5.41	2.69		1	1	0.288	0.288	0.288	True	1	-
+9	Molecule 9	c1ccc5c(c1)ccc4cc3c(ccc2ccccc23)cc45	2.8 log(L/kg) (EXPERIMENTAL value)	2.73	532	2.74	2.57	5.78	2.8		1	1	0.074	0.074	0.074	True	1	-
+10	Molecule 10	c1cc2ccc3ccc4ccc5cccc6c(c1)c2c3c4c56	2.79 log(L/kg) (GOOD reliability)	2.79	618	2.84	2.59	5.78	-		1	0.976	0.181	0.055	0.288	True	1	-
+11	Molecule 11	c1ccc2c(c1)c3ccc4ccc5cccc6cc2c3c4c56	2.76 log(L/kg) (GOOD reliability)	2.76	575	2.78	2.59	5.78	-		1	0.896	0.399	0.4	0.447	True	1	-
+12	Molecule 12	c1(c(c(c(c(c1Cl)Cl)Cl)Cl)Cl)Cl	4.23 log(L/kg) (EXPERIMENTAL value)	3.34	2178	2.9	3.57	5.21	4.23	6 Cl atoms in the molecule (SO 01)	0.85	1	0.892	0.892	0.892	True	1	-
+13	Molecule 13	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	2.77 log(L/kg) (EXPERIMENTAL value)	3.04	1090	2.89	3.01	4.09	2.77	6 Cl atoms in the molecule (SO 01)	1	1	0.267	0.267	0.267	True	1	-
+14	Molecule 14	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	2.77 log(L/kg) (EXPERIMENTAL value)	3.04	1090	2.89	3.01	4.09	2.77	6 Cl atoms in the molecule (SO 01)	1	1	0.267	0.267	0.267	True	1	-
+15	Molecule 15	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	2.77 log(L/kg) (EXPERIMENTAL value)	3.04	1090	2.89	3.01	4.09	2.77	6 Cl atoms in the molecule (SO 01)	1	1	0.267	0.267	0.267	True	1	-
+16	Molecule 16	c1cc(ccc1C(c2ccc(cc2)Cl)=C(Cl)Cl)Cl	4.51 log(L/kg) (EXPERIMENTAL value)	4.17	14830	3.85	4.2	5.85	4.51		1	1	0.339	0.339	0.339	True	0.85	-
+17	Molecule 17	c1cc(ccc1C(c2ccc(cc2)Cl)C(Cl)Cl)Cl	4.17 log(L/kg) (MODERATE reliability)	4.17	14688	3.82	4.22	5.93	-		0.85	0.951	0.275	0.52	0.381	True	0.85	-
+18	Molecule 18	c1cc(ccc1C(c2ccc(cc2)Cl)C(Cl)(Cl)Cl)Cl	4.57 log(L/kg) (EXPERIMENTAL value)	4.19	15466	3.75	4.34	6.17	4.57		1	1	0.381	0.381	0.381	True	0.85	-
+19	Molecule 19	c1cc(ccc1c2ccc(cc2Cl)Cl)Cl	4.33 log(L/kg) (EXPERIMENTAL value)	4.32	20986	4.24	4.1	5.47	4.33	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07)	1	1	0.008	0.008	0.008	True	1	-
+20	Molecule 20	c1cc(c(cc1Cl)c2cc(ccc2Cl)Cl)Cl	4.44 log(L/kg) (EXPERIMENTAL value)	4.64	43388	4.55	4.39	5.99	4.44	Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	1	0.197	0.197	0.197	True	1	-
+21	Molecule 21	c1cc(c(cc1Cl)c2cc(c(cc2Cl)Cl)Cl)Cl	4.63 log(L/kg) (EXPERIMENTAL value)	4.64	43679	4.42	4.52	6.23	4.63	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	1	0.01	0.01	0.01	True	1	-
+22	Molecule 22	c1cc(c(cc1c2cc(c(cc2Cl)Cl)Cl)Cl)Cl	4.38 log(L/kg) (EXPERIMENTAL value)	4.63	42789	4.41	4.52	6.23	4.38	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	1	0.251	0.251	0.251	True	1	-
+23	Molecule 23	c2c(c1cc(c(cc1Cl)Cl)Cl)c(cc(c2Cl)Cl)Cl	4.37 log(L/kg) (MODERATE reliability)	4.37	23572	3.94	4.49	6.47	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	0.85	0.972	0.317	0.305	0.623	True	1	-
+24	Molecule 24	c1cc(c(c(c1c2cc(c(cc2Cl)Cl)Cl)Cl)Cl)Cl	4.37 log(L/kg) (MODERATE reliability)	4.37	23670	3.94	4.49	6.47	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	0.85	0.972	0.317	0.305	0.623	True	1	-
+25	Molecule 25	c2c(c1cc(c(c(c1Cl)Cl)Cl)Cl)c(cc(c2Cl)Cl)Cl	3.89 log(L/kg) (LOW reliability)	3.89	7833	3.2	4.33	6.7	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	0	0.946	0.317	0.431	0.623	False	1	-
+26	Molecule 26	c1cc(ccc1c2cc(c(cc2Cl)Cl)Cl)Cl	4.62 log(L/kg) (GOOD reliability)	4.62	41764	4.53	4.38	5.99	-	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	0.995	0.154	0.146	0.246	True	1	-
+27	Molecule 27	c1cc(ccc1c2ccc(c(c2Cl)Cl)Cl)Cl	4.62 log(L/kg) (GOOD reliability)	4.62	42054	4.53	4.38	5.99	-	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07)	1	0.995	0.083	0.079	0.105	True	1	-
+28	Molecule 28	c1cc(cc(c1c2cc(c(c(c2)Cl)Cl)Cl)Cl)Cl	4.63 log(L/kg) (GOOD reliability)	4.63	42929	4.41	4.52	6.23	-	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07)	1	0.998	0.264	0.265	0.354	True	1	-
+29	Molecule 29	c1cc(ccc1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl	4.63 log(L/kg) (GOOD reliability)	4.63	43084	4.42	4.52	6.23	-	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	0.995	0.187	0.196	0.2	True	1	-
+30	Molecule 30	c1cc(c(cc1c2ccc(c(c2Cl)Cl)Cl)Cl)Cl	4.28 log(L/kg) (EXPERIMENTAL value)	4.63	43039	4.41	4.52	6.23	4.28	Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07)	1	1	0.354	0.354	0.354	True	1	-
+31	Molecule 31	c1c(cc(c(c1Cl)Cl)Cl)c2cc(c(cc2Cl)Cl)Cl	4.37 log(L/kg) (GOOD reliability)	4.37	23485	3.94	4.49	6.47	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	0.971	0.303	0.05	0.354	True	1	-
+32	Molecule 32	c1cc(c(cc1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl)Cl	4.37 log(L/kg) (GOOD reliability)	4.37	23554	3.94	4.49	6.47	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	1	0.971	0.303	0.05	0.354	True	1	-
+33	Molecule 33	c1cc(c(c(c1c2cc(c(c(c2)Cl)Cl)Cl)Cl)Cl)Cl	4.37 log(L/kg) (GOOD reliability)	4.37	23583	3.94	4.49	6.47	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07)	1	0.971	0.264	0.265	0.354	True	1	-
+34	Molecule 34	c1cc(c(c(c1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl)Cl)Cl	3.89 log(L/kg) (LOW reliability)	3.89	7852	3.2	4.33	6.7	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	0	0.946	0.317	0.43	0.623	False	1	-
+35	Molecule 35	c1c(cc(c(c1Cl)Cl)Cl)c2cc(c(c(c2Cl)Cl)Cl)Cl	3.89 log(L/kg) (LOW reliability)	3.89	7821	3.19	4.33	6.7	-	6 Cl atoms in the molecule (SO 01); Moiety (SMILES: Clc1ccccc1c1ccc(Cl)cc1) (SR 07); Moiety (SMILES: Clc1cc(c2ccccc2)c(Cl)cc1) (SR 09)	0	0.945	0.303	0.437	0.354	False	1	-

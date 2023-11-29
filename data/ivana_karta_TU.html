@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_98c43aaceb2a6526741aba962ff5fb6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_98c43aaceb2a6526741aba962ff5fb6d" ></div>
+        
+</body>
+<script>    
+    
+            var map_98c43aaceb2a6526741aba962ff5fb6d = L.map(
+                "map_98c43aaceb2a6526741aba962ff5fb6d",
+                {
+                    center: [45.12004824999999, 15.854103321428571],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3319f3ab95cd24aebce99e9c133943e3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+            var heat_map_6c7fdcc96b7f66ee5f12b03326d9483b = L.heatLayer(
+                [[45.47773400000001, 14.806545000000002, 25.165772489049267], [45.447729, 14.853218, 55.11025225999645], [45.49634, 15.551701, 172.25944136360008], [45.500745, 15.575217000000002, 97.71004197010846], [45.560677, 15.737882999999998, 23.892900050517273], [45.975335, 15.939998999999998, 69.01930871541273], [45.357614, 13.737685999999998, 28.73691955785682], [45.401167, 13.947612, 119.0171590589125], [45.262613, 14.12737, 71.78266567985824], [45.628944, 15.301039, 72.44213493247153], [45.614388, 15.476448, 228.07407922240418], [43.05095, 17.661434, 128.74581401858265], [43.054255, 17.655278, 27.878039950375143], [43.054154, 17.652171, 422.96910360081193], [43.020129, 17.447356, 6.194321590333319], [45.446224, 17.473141000000002, 8.375026145896053], [45.466612, 17.506494, 8.679517476543984], [45.444949, 16.270323, 185.2766126661077], [45.470357, 16.385345, 228.37902352112656], [45.47153400000001, 16.387908, 84.12132867732579], [45.779541, 16.012931, 418.19638928336093], [44.864727, 15.600791, 140.14324243958205], [45.420562, 15.482801, 34.37047167946703], [45.445093, 15.504593, 167.29119168256898], [45.428927, 15.190848, 59.78147791555362], [45.614723, 15.479833, 51.65110266908081], [45.121145, 15.589586, 33.609390892743946], [45.484183, 15.559342, 69.79291653551438]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+            var circle_marker_d7975d04954a701ac48dca8f9ad20db9 = L.circleMarker(
+                [45.47773400000001, 14.806545000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_9eb6aa7d9661ac190a5a8ad2765857d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e6cfb37cf551d4073f0e4cf251f6c7b = $(`<div id="html_5e6cfb37cf551d4073f0e4cf251f6c7b" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> Kuželj-Gorski kotar<br><b>TU:</b> 25.166</div>`)[0];
+                popup_9eb6aa7d9661ac190a5a8ad2765857d3.setContent(html_5e6cfb37cf551d4073f0e4cf251f6c7b);
+            
+        
+
+        circle_marker_d7975d04954a701ac48dca8f9ad20db9.bindPopup(popup_9eb6aa7d9661ac190a5a8ad2765857d3)
+        ;
+
+        
+    
+    
+            var circle_marker_94817069f0b38fd47de011352060ee5d = L.circleMarker(
+                [45.447729, 14.853218],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_9862482e25df1d55f31e192c620851a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_413eea1b55960382a3aad110eff5e9ad = $(`<div id="html_413eea1b55960382a3aad110eff5e9ad" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupica<br><b>Naziv postaje:</b> Iševnica- Gorski kotar<br><b>TU:</b> 55.11</div>`)[0];
+                popup_9862482e25df1d55f31e192c620851a7.setContent(html_413eea1b55960382a3aad110eff5e9ad);
+            
+        
+
+        circle_marker_94817069f0b38fd47de011352060ee5d.bindPopup(popup_9862482e25df1d55f31e192c620851a7)
+        ;
+
+        
+    
+    
+            var circle_marker_bf4cdbe0dd27831a671cae038128be8e = L.circleMarker(
+                [45.49634, 15.551701],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_2c64fd0bc2bb2e626c048b3bcbb67fdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17897814b5786c8ff08a3549258c8075 = $(`<div id="html_17897814b5786c8ff08a3549258c8075" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> centar Karlovca<br><b>TU:</b> 172.259</div>`)[0];
+                popup_2c64fd0bc2bb2e626c048b3bcbb67fdc.setContent(html_17897814b5786c8ff08a3549258c8075);
+            
+        
+
+        circle_marker_bf4cdbe0dd27831a671cae038128be8e.bindPopup(popup_2c64fd0bc2bb2e626c048b3bcbb67fdc)
+        ;
+
+        
+    
+    
+            var circle_marker_4415622f817c62684bce65ba512fa729 = L.circleMarker(
+                [45.500745, 15.575217000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_016de31103f256dca75fda1cfa9044a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e951f9c4aba93c83190e27f42e2f738 = $(`<div id="html_5e951f9c4aba93c83190e27f42e2f738" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Korana<br><b>Naziv postaje:</b> ušće u Kupu<br><b>TU:</b> 97.71</div>`)[0];
+                popup_016de31103f256dca75fda1cfa9044a7.setContent(html_5e951f9c4aba93c83190e27f42e2f738);
+            
+        
+
+        circle_marker_4415622f817c62684bce65ba512fa729.bindPopup(popup_016de31103f256dca75fda1cfa9044a7)
+        ;
+
+        
+    
+    
+            var circle_marker_b349f46ec7a7e74d0776343f12f74d9a = L.circleMarker(
+                [45.560677, 15.737882999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_e668277dac2e57889db59c073b0b75e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a3e6b87dd5de16994e437388313ffca = $(`<div id="html_9a3e6b87dd5de16994e437388313ffca" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupčina<br><b>Naziv postaje:</b> Zagrebačka županija<br><b>TU:</b> 23.893</div>`)[0];
+                popup_e668277dac2e57889db59c073b0b75e0.setContent(html_9a3e6b87dd5de16994e437388313ffca);
+            
+        
+
+        circle_marker_b349f46ec7a7e74d0776343f12f74d9a.bindPopup(popup_e668277dac2e57889db59c073b0b75e0)
+        ;
+
+        
+    
+    
+            var circle_marker_5d6f659e2ebfbc20c479b30122ef6dec = L.circleMarker(
+                [45.975335, 15.939998999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_112db7153b0b5fdc793434f6ef1aebe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95dbb39dc6116ee9d815ba6cb06e9503 = $(`<div id="html_95dbb39dc6116ee9d815ba6cb06e9503" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Vidak<br><b>Naziv postaje:</b> Stubičke Toplice<br><b>TU:</b> 69.019</div>`)[0];
+                popup_112db7153b0b5fdc793434f6ef1aebe3.setContent(html_95dbb39dc6116ee9d815ba6cb06e9503);
+            
+        
+
+        circle_marker_5d6f659e2ebfbc20c479b30122ef6dec.bindPopup(popup_112db7153b0b5fdc793434f6ef1aebe3)
+        ;
+
+        
+    
+    
+            var circle_marker_3870d8031e099147fc6f1f2987c16ef9 = L.circleMarker(
+                [45.357614, 13.737685999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_4126b8c3384aae2ac007584997b8e817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4009292871403f736a306a3819a81155 = $(`<div id="html_4009292871403f736a306a3819a81155" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Mirna<br><b>Naziv postaje:</b>  Istra<br><b>TU:</b> 28.737</div>`)[0];
+                popup_4126b8c3384aae2ac007584997b8e817.setContent(html_4009292871403f736a306a3819a81155);
+            
+        
+
+        circle_marker_3870d8031e099147fc6f1f2987c16ef9.bindPopup(popup_4126b8c3384aae2ac007584997b8e817)
+        ;
+
+        
+    
+    
+            var circle_marker_720f332255c9155caa039ebf33f85253 = L.circleMarker(
+                [45.401167, 13.947612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_0b0607f7215ec956ec80ac7d399e38cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19ecc95b95cdd45397e41a7cec12a9b6 = $(`<div id="html_19ecc95b95cdd45397e41a7cec12a9b6" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Mala Huba<br><b>Naziv postaje:</b>  Istra<br><b>TU:</b> 119.017</div>`)[0];
+                popup_0b0607f7215ec956ec80ac7d399e38cc.setContent(html_19ecc95b95cdd45397e41a7cec12a9b6);
+            
+        
+
+        circle_marker_720f332255c9155caa039ebf33f85253.bindPopup(popup_0b0607f7215ec956ec80ac7d399e38cc)
+        ;
+
+        
+    
+    
+            var circle_marker_5d3949d0787e737814c5d84b3960b9fa = L.circleMarker(
+                [45.262613, 14.12737],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_db29fed24a42343e71ed79d7192b3198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdac4a55adf5b3ed9bebd29e7c4b8671 = $(`<div id="html_fdac4a55adf5b3ed9bebd29e7c4b8671" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Boljunčica<br><b>Naziv postaje:</b>  Istra<br><b>TU:</b> 71.783</div>`)[0];
+                popup_db29fed24a42343e71ed79d7192b3198.setContent(html_fdac4a55adf5b3ed9bebd29e7c4b8671);
+            
+        
+
+        circle_marker_5d3949d0787e737814c5d84b3960b9fa.bindPopup(popup_db29fed24a42343e71ed79d7192b3198)
+        ;
+
+        
+    
+    
+            var circle_marker_aab0fd37e7d1b97f881cadcdf8096ffb = L.circleMarker(
+                [45.628944, 15.301039],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_f70f28ec9a9041fb726b833ca99ff7fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8acae0f59ff678cea23a6b4a25db6e2f = $(`<div id="html_8acae0f59ff678cea23a6b4a25db6e2f" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa <br><b>Naziv postaje:</b> Jurovo - Jurovski Brod (utok Lahinje - lijevi pritok)<br><b>TU:</b> 72.442</div>`)[0];
+                popup_f70f28ec9a9041fb726b833ca99ff7fa.setContent(html_8acae0f59ff678cea23a6b4a25db6e2f);
+            
+        
+
+        circle_marker_aab0fd37e7d1b97f881cadcdf8096ffb.bindPopup(popup_f70f28ec9a9041fb726b833ca99ff7fa)
+        ;
+
+        
+    
+    
+            var circle_marker_c83b2dc8bfa27f6489f355b9a707051e = L.circleMarker(
+                [45.614388, 15.476448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_000800c5cbeb41306d8d01e184005b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_189f4e1e085e47785056dbfb303cd01c = $(`<div id="html_189f4e1e085e47785056dbfb303cd01c" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa <br><b>Naziv postaje:</b> Ozalj<br><b>TU:</b> 228.074</div>`)[0];
+                popup_000800c5cbeb41306d8d01e184005b3d.setContent(html_189f4e1e085e47785056dbfb303cd01c);
+            
+        
+
+        circle_marker_c83b2dc8bfa27f6489f355b9a707051e.bindPopup(popup_000800c5cbeb41306d8d01e184005b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_f8b6a5104ded9549d072f6a2b1225ae4 = L.circleMarker(
+                [43.05095, 17.661434],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_6398cc4acc88dfa5b38b350de36dbd17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2e2715c228e3006d675cc5d9171cd68 = $(`<div id="html_b2e2715c228e3006d675cc5d9171cd68" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Neretva<br><b>Naziv postaje:</b> Metković-Doljani<br><b>TU:</b> 128.746</div>`)[0];
+                popup_6398cc4acc88dfa5b38b350de36dbd17.setContent(html_b2e2715c228e3006d675cc5d9171cd68);
+            
+        
+
+        circle_marker_f8b6a5104ded9549d072f6a2b1225ae4.bindPopup(popup_6398cc4acc88dfa5b38b350de36dbd17)
+        ;
+
+        
+    
+    
+            var circle_marker_84d8ff69031e622bb6dc3065e2dbe3c6 = L.circleMarker(
+                [43.054255, 17.655278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_578fda8efb362fa88c5923ed46c3b5fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_334c00dcf15daf14ede7568ec04800dd = $(`<div id="html_334c00dcf15daf14ede7568ec04800dd" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Neretva<br><b>Naziv postaje:</b> Metković-Unka<br><b>TU:</b> 27.878</div>`)[0];
+                popup_578fda8efb362fa88c5923ed46c3b5fb.setContent(html_334c00dcf15daf14ede7568ec04800dd);
+            
+        
+
+        circle_marker_84d8ff69031e622bb6dc3065e2dbe3c6.bindPopup(popup_578fda8efb362fa88c5923ed46c3b5fb)
+        ;
+
+        
+    
+    
+            var circle_marker_32ac8844337d2b82c4f02e59d4f37b03 = L.circleMarker(
+                [43.054154, 17.652171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_4260369b25c5cd93c8add365e4a8e583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63b925900428e9989b0fd9f32e1fc37d = $(`<div id="html_63b925900428e9989b0fd9f32e1fc37d" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Neretva<br><b>Naziv postaje:</b> Metković-most<br><b>TU:</b> 422.969</div>`)[0];
+                popup_4260369b25c5cd93c8add365e4a8e583.setContent(html_63b925900428e9989b0fd9f32e1fc37d);
+            
+        
+
+        circle_marker_32ac8844337d2b82c4f02e59d4f37b03.bindPopup(popup_4260369b25c5cd93c8add365e4a8e583)
+        ;
+
+        
+    
+    
+            var circle_marker_e2ed99604dec58dc821651e570f55d03 = L.circleMarker(
+                [43.020129, 17.447356],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_a08789cb37269bedd5202429b5726294 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ecc7ab2df408d52e17f6ec5e4b7030 = $(`<div id="html_f4ecc7ab2df408d52e17f6ec5e4b7030" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Neretva<br><b>Naziv postaje:</b> ušće<br><b>TU:</b> 6.194</div>`)[0];
+                popup_a08789cb37269bedd5202429b5726294.setContent(html_f4ecc7ab2df408d52e17f6ec5e4b7030);
+            
+        
+
+        circle_marker_e2ed99604dec58dc821651e570f55d03.bindPopup(popup_a08789cb37269bedd5202429b5726294)
+        ;
+
+        
+    
+    
+            var circle_marker_f806dceabf6c7217867888c0c548f4fa = L.circleMarker(
+                [45.446224, 17.473141000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_58bf44bd757e8ee95089291e4fbd2ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea454000f1f865dd0ccb0edaa3aeef7d = $(`<div id="html_ea454000f1f865dd0ccb0edaa3aeef7d" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Orljava<br><b>Naziv postaje:</b> Mijači<br><b>TU:</b> 8.375</div>`)[0];
+                popup_58bf44bd757e8ee95089291e4fbd2ae8.setContent(html_ea454000f1f865dd0ccb0edaa3aeef7d);
+            
+        
+
+        circle_marker_f806dceabf6c7217867888c0c548f4fa.bindPopup(popup_58bf44bd757e8ee95089291e4fbd2ae8)
+        ;
+
+        
+    
+    
+            var circle_marker_af1d8c68402d4cb7d8bd57bf49864856 = L.circleMarker(
+                [45.466612, 17.506494],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_997ddc00e179a054c8f9d1eca460bcdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a02d49c8c6ec6c08a8156e8bd36a9e49 = $(`<div id="html_a02d49c8c6ec6c08a8156e8bd36a9e49" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Brzaja<br><b>Naziv postaje:</b> Striježevica<br><b>TU:</b> 8.68</div>`)[0];
+                popup_997ddc00e179a054c8f9d1eca460bcdc.setContent(html_a02d49c8c6ec6c08a8156e8bd36a9e49);
+            
+        
+
+        circle_marker_af1d8c68402d4cb7d8bd57bf49864856.bindPopup(popup_997ddc00e179a054c8f9d1eca460bcdc)
+        ;
+
+        
+    
+    
+            var circle_marker_397992583f98e9965e294c0ebcba2e95 = L.circleMarker(
+                [45.444949, 16.270323],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_b9fe7c6d9bce6c97ce66d965d4dc9593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e395da97dd153fd7d7ffcb5f365b6b4 = $(`<div id="html_8e395da97dd153fd7d7ffcb5f365b6b4" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> Petrinja (kupalište)<br><b>TU:</b> 185.277</div>`)[0];
+                popup_b9fe7c6d9bce6c97ce66d965d4dc9593.setContent(html_8e395da97dd153fd7d7ffcb5f365b6b4);
+            
+        
+
+        circle_marker_397992583f98e9965e294c0ebcba2e95.bindPopup(popup_b9fe7c6d9bce6c97ce66d965d4dc9593)
+        ;
+
+        
+    
+    
+            var circle_marker_eb187aa1b438b1340a55f0af8000761c = L.circleMarker(
+                [45.470357, 16.385345],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_cffac27ecdd10e6b8c64db598cc2a28a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ac2361f584919b117fa74116822f5d5 = $(`<div id="html_5ac2361f584919b117fa74116822f5d5" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> Sisak (Stari grad)<br><b>TU:</b> 228.379</div>`)[0];
+                popup_cffac27ecdd10e6b8c64db598cc2a28a.setContent(html_5ac2361f584919b117fa74116822f5d5);
+            
+        
+
+        circle_marker_eb187aa1b438b1340a55f0af8000761c.bindPopup(popup_cffac27ecdd10e6b8c64db598cc2a28a)
+        ;
+
+        
+    
+    
+            var circle_marker_a053c6fc1604ed1e67cfe7c4d6dc648d = L.circleMarker(
+                [45.47153400000001, 16.387908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_5947beb737294096ee318176bc6bfee9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20e11427d4d1758a9e6b646021aba669 = $(`<div id="html_20e11427d4d1758a9e6b646021aba669" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Sava<br><b>Naziv postaje:</b> Sisak (Stari grad)<br><b>TU:</b> 84.121</div>`)[0];
+                popup_5947beb737294096ee318176bc6bfee9.setContent(html_20e11427d4d1758a9e6b646021aba669);
+            
+        
+
+        circle_marker_a053c6fc1604ed1e67cfe7c4d6dc648d.bindPopup(popup_5947beb737294096ee318176bc6bfee9)
+        ;
+
+        
+    
+    
+            var circle_marker_5af82909d0e33aa0f2d6cf016b9f2f37 = L.circleMarker(
+                [45.779541, 16.012931],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_1e32989b9bf880c819da7637d3daea6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c5778e093ff81eea1bd7c2c42f992b1 = $(`<div id="html_2c5778e093ff81eea1bd7c2c42f992b1" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Sava<br><b>Naziv postaje:</b> Zagreb (Savski Kamenji - toplana)<br><b>TU:</b> 418.196</div>`)[0];
+                popup_1e32989b9bf880c819da7637d3daea6c.setContent(html_2c5778e093ff81eea1bd7c2c42f992b1);
+            
+        
+
+        circle_marker_5af82909d0e33aa0f2d6cf016b9f2f37.bindPopup(popup_1e32989b9bf880c819da7637d3daea6c)
+        ;
+
+        
+    
+    
+            var circle_marker_ce1a57b9e6ed5e5cdf5521e54e6ab51b = L.circleMarker(
+                [44.864727, 15.600791],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_82d0fded68e177fae49d3fb2e0228542 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7c592eed388b4d3ae25b84d5c5e681b = $(`<div id="html_e7c592eed388b4d3ae25b84d5c5e681b" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Plitvička jezera <br><b>Naziv postaje:</b> Prošćansko jezero<br><b>TU:</b> 140.143</div>`)[0];
+                popup_82d0fded68e177fae49d3fb2e0228542.setContent(html_e7c592eed388b4d3ae25b84d5c5e681b);
+            
+        
+
+        circle_marker_ce1a57b9e6ed5e5cdf5521e54e6ab51b.bindPopup(popup_82d0fded68e177fae49d3fb2e0228542)
+        ;
+
+        
+    
+    
+            var circle_marker_bf90867df09a1dca690a6d6ed8bc2383 = L.circleMarker(
+                [45.420562, 15.482801],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_76da7e916e42731d30eed1e76ae8e330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce10f86255722af62e9bc184b1ebd891 = $(`<div id="html_ce10f86255722af62e9bc184b1ebd891" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Mrežnica<br><b>Naziv postaje:</b> Belavići-kamp Slapić<br><b>TU:</b> 34.37</div>`)[0];
+                popup_76da7e916e42731d30eed1e76ae8e330.setContent(html_ce10f86255722af62e9bc184b1ebd891);
+            
+        
+
+        circle_marker_bf90867df09a1dca690a6d6ed8bc2383.bindPopup(popup_76da7e916e42731d30eed1e76ae8e330)
+        ;
+
+        
+    
+    
+            var circle_marker_89074e9e061b4695e890efb2ad6588b0 = L.circleMarker(
+                [45.445093, 15.504593],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_e7253897f4ac931545bce887a0bfc428 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1909dacba6962a4233d478ee51909426 = $(`<div id="html_1909dacba6962a4233d478ee51909426" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Mrežnica<br><b>Naziv postaje:</b> Duga Resa-gradsko kupalište<br><b>TU:</b> 167.291</div>`)[0];
+                popup_e7253897f4ac931545bce887a0bfc428.setContent(html_1909dacba6962a4233d478ee51909426);
+            
+        
+
+        circle_marker_89074e9e061b4695e890efb2ad6588b0.bindPopup(popup_e7253897f4ac931545bce887a0bfc428)
+        ;
+
+        
+    
+    
+            var circle_marker_b0e98ab9c8ad9e6fcd804cfacd5d135d = L.circleMarker(
+                [45.428927, 15.190848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_546cc732e4a6fdfabb942f051d25171c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69120398f49e662962bc4b64007b14ef = $(`<div id="html_69120398f49e662962bc4b64007b14ef" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> Severin na Kupi-kupalište Klanac<br><b>TU:</b> 59.781</div>`)[0];
+                popup_546cc732e4a6fdfabb942f051d25171c.setContent(html_69120398f49e662962bc4b64007b14ef);
+            
+        
+
+        circle_marker_b0e98ab9c8ad9e6fcd804cfacd5d135d.bindPopup(popup_546cc732e4a6fdfabb942f051d25171c)
+        ;
+
+        
+    
+    
+            var circle_marker_703971626ef200f768145a26d6e2fb5d = L.circleMarker(
+                [45.614723, 15.479833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_7400660a0d059b38588fdab330ca50e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90433f6cb777c42c1d141c2b556c5f06 = $(`<div id="html_90433f6cb777c42c1d141c2b556c5f06" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Kupa<br><b>Naziv postaje:</b> Ozalj-gradsko kupalište<br><b>TU:</b> 51.651</div>`)[0];
+                popup_7400660a0d059b38588fdab330ca50e9.setContent(html_90433f6cb777c42c1d141c2b556c5f06);
+            
+        
+
+        circle_marker_703971626ef200f768145a26d6e2fb5d.bindPopup(popup_7400660a0d059b38588fdab330ca50e9)
+        ;
+
+        
+    
+    
+            var circle_marker_180ace59308187d8bc282262ade11df7 = L.circleMarker(
+                [45.121145, 15.589586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_45c109fc687559e59268b9f0621983c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d662eff60d602ccd994811be0c9d8d2 = $(`<div id="html_1d662eff60d602ccd994811be0c9d8d2" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Korana<br><b>Naziv postaje:</b> Slunj-kupalište Rastoke<br><b>TU:</b> 33.609</div>`)[0];
+                popup_45c109fc687559e59268b9f0621983c3.setContent(html_1d662eff60d602ccd994811be0c9d8d2);
+            
+        
+
+        circle_marker_180ace59308187d8bc282262ade11df7.bindPopup(popup_45c109fc687559e59268b9f0621983c3)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2cdd9fd5c9a7129401719eb1bc3540 = L.circleMarker(
+                [45.484183, 15.559342],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_98c43aaceb2a6526741aba962ff5fb6d);
+        
+    
+        var popup_612578a3581a07a375e71c6be7ba58e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_294b3f569a037a00a223df93b7a8c7f6 = $(`<div id="html_294b3f569a037a00a223df93b7a8c7f6" style="width: 100.0%; height: 100.0%;"><b>Rijeka:</b> Korana<br><b>Naziv postaje:</b> Karlovac-Foginovo kupalište<br><b>TU:</b> 69.793</div>`)[0];
+                popup_612578a3581a07a375e71c6be7ba58e5.setContent(html_294b3f569a037a00a223df93b7a8c7f6);
+            
+        
+
+        circle_marker_7c2cdd9fd5c9a7129401719eb1bc3540.bindPopup(popup_612578a3581a07a375e71c6be7ba58e5)
+        ;
+
+        
+    
+</script>

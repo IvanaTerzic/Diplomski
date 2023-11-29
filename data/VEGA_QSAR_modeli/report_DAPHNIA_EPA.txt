@@ -1,0 +1,40 @@
+Prediction and Applicability Domain analysis for model:
+Daphnia Magna LC50 48h (EPA) (version 1.0.9)
+(calculation core version : 1.3.18)
+
+No.	Id	SMILES	Assessment	Predicted toxicity [-log(mol/l)]	Predicted toxicity [mg/l]	Molecular Weight	Experimental value [mg/l]	Experimental	ADI	Similarity index	Accuracy index	Concordance index	Max error index	Descriptors range check	ACF index	Remarks
+1	Molecule 1	c1ccc2c(c1)c4cccc3cccc2c34	0.0925 mg/L (EXPERIMENTAL value)	5.65	0.4538	202.26	0.0925	6.34	0.85	1	0.492	0.691	0.492	True	1	-
+2	Molecule 2	c1cc2ccc3cccc4ccc(c1)c2c34	0.5075 mg/L (GOOD reliability)	5.6	0.5075	202.26	-	-	1	0.911	0.249	0.49	0.492	True	1	-
+3	Molecule 3	c3ccc4cc2c(ccc1ccccc12)cc4(c3)	0.3703 mg/L (GOOD reliability)	5.79	0.3703	228.3	-	-	1	0.889	0.249	0.49	0.492	True	1	-
+4	Molecule 4	c1ccc2c(c1)ccc3c4ccccc4(ccc23)	0.392 mg/L (GOOD reliability)	5.77	0.392	228.3	-	-	1	0.889	0.249	0.49	0.492	True	1	-
+5	Molecule 5	c1ccc4c(c1)ccc5c3cccc2cccc(c23)c45	0.1709 mg/L (LOW reliability)	6.17	0.1709	252.32	-	-	0	0.863	0.343	0.715	0.492	False	1	-
+6	Molecule 6	c1ccc3c(c1)cc5c2ccccc2c4cccc3c45	0.1526 mg/L (LOW reliability)	6.22	0.1526	252.32	-	-	0	0.863	0.343	0.715	0.492	False	1	-
+7	Molecule 7	c1ccc2cc3c5cccc4cccc(c3(cc2(c1)))c45	0.1618 mg/L (LOW reliability)	6.19	0.1618	252.32	-	-	0	0.863	0.343	0.715	0.492	False	1	-
+8	Molecule 8	c1ccc2c(c1)cc3ccc4cccc5ccc2c3c45	0.177 mg/L (LOW reliability)	6.15	0.177	252.32	-	-	0	0.865	0.249	0.49	0.492	False	1	-
+9	Molecule 9	c1ccc5c(c1)ccc4cc3c(ccc2ccccc23)cc45	0.1404 mg/L (MODERATE reliability)	6.3	0.1404	278.36	-	-	0.85	0.846	0.249	0.49	0.492	True	1	-
+10	Molecule 10	c1cc2ccc3ccc4ccc5cccc6c(c1)c2c3c4c56	0.0983 mg/L (LOW reliability)	6.45	0.0983	276.34	-	-	0	0.842	0.249	0.599	0.492	False	1	-
+11	Molecule 11	c1ccc2c(c1)c3ccc4ccc5cccc6cc2c3c4c56	0.0812 mg/L (LOW reliability)	6.53	0.0812	276.34	-	-	0	0.841	0.343	0.907	0.492	False	1	-
+12	Molecule 12	c1(c(c(c(c(c1Cl)Cl)Cl)Cl)Cl)Cl	4.37 mg/L (MODERATE reliability)	4.81	4.37	284.76	-	-	0.85	0.932	0.848	0.304	0.872	True	1	-
+13	Molecule 13	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	1.79 mg/L (EXPERIMENTAL value)	3.89	37.61	290.82	1.79	5.21	0.7	1	0.566	1.322	0.566	True	1	-
+14	Molecule 14	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	1.79 mg/L (EXPERIMENTAL value)	3.89	37.61	290.82	1.79	5.21	0.7	1	0.566	1.322	0.566	True	1	-
+15	Molecule 15	C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl	1.79 mg/L (EXPERIMENTAL value)	3.89	37.61	290.82	1.79	5.21	0.7	1	0.566	1.322	0.566	True	1	-
+16	Molecule 16	c1cc(ccc1C(c2ccc(cc2)Cl)=C(Cl)Cl)Cl	0.2743 mg/L (LOW reliability)	6.06	0.2743	318.02	-	-	0.533	0.889	0.858	0.826	1.341	True	0.6	-
+17	Molecule 17	c1cc(ccc1C(c2ccc(cc2)Cl)C(Cl)Cl)Cl	0.8043 mg/L (LOW reliability)	5.6	0.8043	320.04	-	-	0.7	0.944	0.858	1.29	1.341	True	0.85	-
+18	Molecule 18	c1cc(ccc1C(c2ccc(cc2)Cl)C(Cl)(Cl)Cl)Cl	0.0426 mg/L (EXPERIMENTAL value)	6.12	0.2702	354.48	0.0426	6.92	0.85	1	0.376	0.802	0.376	True	0.85	-
+19	Molecule 19	c1cc(ccc1c2ccc(cc2Cl)Cl)Cl	0.6556 mg/L (MODERATE reliability)	5.59	0.6556	257.54	-	-	0.85	0.97	0.606	0.721	1.12	True	1	-
+20	Molecule 20	c1cc(c(cc1Cl)c2cc(ccc2Cl)Cl)Cl	0.3917 mg/L (MODERATE reliability)	5.87	0.3917	291.98	-	-	0.85	0.951	0.606	0.675	1.12	True	1	-
+21	Molecule 21	c1cc(c(cc1Cl)c2cc(c(cc2Cl)Cl)Cl)Cl	0.2173 mg/L (MODERATE reliability)	6.18	0.2173	326.42	-	-	0.85	0.933	0.606	0.675	1.12	True	1	-
+22	Molecule 22	c1cc(c(cc1c2cc(c(cc2Cl)Cl)Cl)Cl)Cl	0.2125 mg/L (MODERATE reliability)	6.19	0.2125	326.42	-	-	0.85	0.933	0.606	0.675	1.12	True	1	-
+23	Molecule 23	c2c(c1cc(c(cc1Cl)Cl)Cl)c(cc(c2Cl)Cl)Cl	0.1311 mg/L (MODERATE reliability)	6.44	0.1311	360.86	-	-	0.85	0.905	0.606	0.675	1.12	True	1	-
+24	Molecule 24	c1cc(c(c(c1c2cc(c(cc2Cl)Cl)Cl)Cl)Cl)Cl	0.1271 mg/L (MODERATE reliability)	6.45	0.1271	360.86	-	-	0.85	0.905	0.606	0.675	1.12	True	1	-
+25	Molecule 25	c2c(c1cc(c(c(c1Cl)Cl)Cl)Cl)c(cc(c2Cl)Cl)Cl	0.0738 mg/L (MODERATE reliability)	6.73	0.0738	395.3	-	-	0.85	0.879	0.606	0.675	1.12	True	1	-
+26	Molecule 26	c1cc(ccc1c2cc(c(cc2Cl)Cl)Cl)Cl	0.3514 mg/L (MODERATE reliability)	5.92	0.3514	291.98	-	-	0.85	0.968	0.606	0.675	1.12	True	1	-
+27	Molecule 27	c1cc(ccc1c2ccc(c(c2Cl)Cl)Cl)Cl	0.3817 mg/L (MODERATE reliability)	5.88	0.3817	291.98	-	-	0.85	0.968	0.606	0.675	1.12	True	1	-
+28	Molecule 28	c1cc(cc(c1c2cc(c(c(c2)Cl)Cl)Cl)Cl)Cl	0.2153 mg/L (MODERATE reliability)	6.18	0.2153	326.42	-	-	0.85	0.934	0.606	0.675	1.12	True	1	-
+29	Molecule 29	c1cc(ccc1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl	0.1972 mg/L (MODERATE reliability)	6.22	0.1972	326.42	-	-	0.85	0.938	0.606	0.675	1.12	True	1	-
+30	Molecule 30	c1cc(c(cc1c2ccc(c(c2Cl)Cl)Cl)Cl)Cl	0.2135 mg/L (MODERATE reliability)	6.18	0.2135	326.42	-	-	0.85	0.932	0.606	0.675	1.12	True	1	-
+31	Molecule 31	c1c(cc(c(c1Cl)Cl)Cl)c2cc(c(cc2Cl)Cl)Cl	0.1273 mg/L (MODERATE reliability)	6.45	0.1273	360.86	-	-	0.85	0.904	0.606	0.675	1.12	True	1	-
+32	Molecule 32	c1cc(c(cc1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl)Cl	0.1199 mg/L (MODERATE reliability)	6.48	0.1199	360.86	-	-	0.85	0.904	0.606	0.675	1.12	True	1	-
+33	Molecule 33	c1cc(c(c(c1c2cc(c(c(c2)Cl)Cl)Cl)Cl)Cl)Cl	0.1259 mg/L (MODERATE reliability)	6.46	0.1259	360.86	-	-	0.85	0.905	0.606	0.675	1.12	True	1	-
+34	Molecule 34	c1cc(c(c(c1c2cc(c(c(c2Cl)Cl)Cl)Cl)Cl)Cl)Cl	0.072 mg/L (MODERATE reliability)	6.74	0.072	395.3	-	-	0.85	0.879	0.606	0.675	1.12	True	1	-
+35	Molecule 35	c1c(cc(c(c1Cl)Cl)Cl)c2cc(c(c(c2Cl)Cl)Cl)Cl	0.0724 mg/L (MODERATE reliability)	6.74	0.0724	395.3	-	-	0.85	0.878	0.606	0.675	1.12	True	1	-
