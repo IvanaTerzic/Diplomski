@@ -1,7 +1,3 @@
-Prediction and Applicability Domain analysis for model:
-Persistence (sediment) quantitative model (IRFMN) (version 1.0.1)
-(calculation core version : 1.3.18)
-
 No.	Id	SMILES	Assessment	Predicted HL [log(days)]	Predicted HL [days]	Experimental value [days]	Experimental	ADI	Similarity index	Accuracy index	Concordance index	Max error index	Descriptors range check	ACF index	Remarks
 1	Molecule 1	c1ccc2c(c1)c4cccc3cccc2c34	2292 days (EXPERIMENTAL value)	3.36	2291	2292	3.36	1	1	0	0	0	True	1	-
 2	Molecule 2	c1cc2ccc3cccc4ccc(c1)c2c34	2292 days (EXPERIMENTAL value)	3.36	2291	2292	3.36	1	1	0	0	0	True	1	-

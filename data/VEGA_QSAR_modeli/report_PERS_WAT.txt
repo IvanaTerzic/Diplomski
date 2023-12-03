@@ -1,7 +1,3 @@
-Prediction and Applicability Domain analysis for model:
-Persistence (water) model (IRFMN) (version 1.0.1)
-(calculation core version : 1.3.18)
-
 No.	Id	SMILES	Assessment	Predicted persistence in water	Molecules used for prediction	Experimental	Structural Alerts	ADI	Similarity index	Accuracy index	Concordance index	Structural alerts concordance	ACF index	Remarks
 1	Molecule 1	c1ccc2c(c1)c4cccc3cccc2c34	P/vP (EXPERIMENTAL value)	P/vP	1	P/vP	vP (water) alert no. 28	1	1	1	1	1	1	-
 2	Molecule 2	c1cc2ccc3cccc4ccc(c1)c2c34	P/vP (EXPERIMENTAL value)	P/vP	1	P/vP	vP (water) alert no. 28	1	1	1	1	1	1	-
