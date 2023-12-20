@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7488abad439113fea4d947620d299703 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7488abad439113fea4d947620d299703" ></div>
+        
+</body>
+<script>    
+    
+            var map_7488abad439113fea4d947620d299703 = L.map(
+                "map_7488abad439113fea4d947620d299703",
+                {
+                    center: [45.12004824999999, 15.854103321428571],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54194bb1f55eb8013c48807b181d303b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+            var circle_marker_849777d3aeb7a57f93a8a61a32a210af = L.circleMarker(
+                [45.47773400000001, 14.806545000000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_de63b0e4f4528df688104fec760e87cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5fc94cff1b6bf7c6ab9b0c9f373c487 = $(`<div id="html_b5fc94cff1b6bf7c6ab9b0c9f373c487" style="width: 100.0%; height: 100.0%;">Lokacija: Kuželj-Gorski kotar<br>logTU: -6.28</div>`)[0];
+                popup_de63b0e4f4528df688104fec760e87cd.setContent(html_b5fc94cff1b6bf7c6ab9b0c9f373c487);
+            
+        
+
+        circle_marker_849777d3aeb7a57f93a8a61a32a210af.bindPopup(popup_de63b0e4f4528df688104fec760e87cd)
+        ;
+
+        
+    
+    
+            var circle_marker_86f02c5f1212ff6e1d27e5cab73ab046 = L.circleMarker(
+                [45.447729, 14.853218],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_5edb253925655dc1971cea6d811a1b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8cec4683ff09712e659d2e49987434e = $(`<div id="html_e8cec4683ff09712e659d2e49987434e" style="width: 100.0%; height: 100.0%;">Lokacija: Iševnica- Gorski kotar<br>logTU: -6.74</div>`)[0];
+                popup_5edb253925655dc1971cea6d811a1b3d.setContent(html_e8cec4683ff09712e659d2e49987434e);
+            
+        
+
+        circle_marker_86f02c5f1212ff6e1d27e5cab73ab046.bindPopup(popup_5edb253925655dc1971cea6d811a1b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_9d389c44e96ad6f10c3f686afa6139d5 = L.circleMarker(
+                [45.49634, 15.551701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_138a21f016f00a17de2f5d61f9b47ffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83f82b1102b7d1016c9d3378bb344f25 = $(`<div id="html_83f82b1102b7d1016c9d3378bb344f25" style="width: 100.0%; height: 100.0%;">Lokacija: centar Karlovca<br>logTU: -5.29</div>`)[0];
+                popup_138a21f016f00a17de2f5d61f9b47ffc.setContent(html_83f82b1102b7d1016c9d3378bb344f25);
+            
+        
+
+        circle_marker_9d389c44e96ad6f10c3f686afa6139d5.bindPopup(popup_138a21f016f00a17de2f5d61f9b47ffc)
+        ;
+
+        
+    
+    
+            var circle_marker_a81d1a0f6c8e4fa84d329881583632d2 = L.circleMarker(
+                [45.500745, 15.575217000000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_0930eb66b9188e5946271856992a1c65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5176ca66e341772df32aef55a533980c = $(`<div id="html_5176ca66e341772df32aef55a533980c" style="width: 100.0%; height: 100.0%;">Lokacija: ušće u Kupu<br>logTU: -6.92</div>`)[0];
+                popup_0930eb66b9188e5946271856992a1c65.setContent(html_5176ca66e341772df32aef55a533980c);
+            
+        
+
+        circle_marker_a81d1a0f6c8e4fa84d329881583632d2.bindPopup(popup_0930eb66b9188e5946271856992a1c65)
+        ;
+
+        
+    
+    
+            var circle_marker_6acd87c2a78a14428c59bc3628bae9d6 = L.circleMarker(
+                [45.560677, 15.737882999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_eae03b2fd684978b971ef9a7e91c711b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2697449bd94452d0752efb7f61edaab5 = $(`<div id="html_2697449bd94452d0752efb7f61edaab5" style="width: 100.0%; height: 100.0%;">Lokacija: Zagrebačka županija<br>logTU: -7.53</div>`)[0];
+                popup_eae03b2fd684978b971ef9a7e91c711b.setContent(html_2697449bd94452d0752efb7f61edaab5);
+            
+        
+
+        circle_marker_6acd87c2a78a14428c59bc3628bae9d6.bindPopup(popup_eae03b2fd684978b971ef9a7e91c711b)
+        ;
+
+        
+    
+    
+            var circle_marker_ea4fbe1a92d5e2013994b473af0f775d = L.circleMarker(
+                [45.975335, 15.939998999999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_5c840d7b7d42acbbd1aacc33c756fa43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d73999523fdca9cb867d1d435f6b74d = $(`<div id="html_4d73999523fdca9cb867d1d435f6b74d" style="width: 100.0%; height: 100.0%;">Lokacija: Stubičke Toplice<br>logTU: -6.52</div>`)[0];
+                popup_5c840d7b7d42acbbd1aacc33c756fa43.setContent(html_4d73999523fdca9cb867d1d435f6b74d);
+            
+        
+
+        circle_marker_ea4fbe1a92d5e2013994b473af0f775d.bindPopup(popup_5c840d7b7d42acbbd1aacc33c756fa43)
+        ;
+
+        
+    
+    
+            var circle_marker_92a30b92d1597ea31023e7cf21372479 = L.circleMarker(
+                [45.357614, 13.737685999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_1ed54b044745bb751be76af4acc72808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0f45acdf7983531938ac5a6d0a82aa3 = $(`<div id="html_d0f45acdf7983531938ac5a6d0a82aa3" style="width: 100.0%; height: 100.0%;">Lokacija:  Istra<br>logTU: -7.36</div>`)[0];
+                popup_1ed54b044745bb751be76af4acc72808.setContent(html_d0f45acdf7983531938ac5a6d0a82aa3);
+            
+        
+
+        circle_marker_92a30b92d1597ea31023e7cf21372479.bindPopup(popup_1ed54b044745bb751be76af4acc72808)
+        ;
+
+        
+    
+    
+            var circle_marker_a59e0f7929d159c98aee5542b1d5b098 = L.circleMarker(
+                [45.401167, 13.947612],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_c11cf20baccab8879ee0c6f34902e076 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c5b5175aca659acf68b9ce63caf319e = $(`<div id="html_8c5b5175aca659acf68b9ce63caf319e" style="width: 100.0%; height: 100.0%;">Lokacija:  Istra<br>logTU: -6.80</div>`)[0];
+                popup_c11cf20baccab8879ee0c6f34902e076.setContent(html_8c5b5175aca659acf68b9ce63caf319e);
+            
+        
+
+        circle_marker_a59e0f7929d159c98aee5542b1d5b098.bindPopup(popup_c11cf20baccab8879ee0c6f34902e076)
+        ;
+
+        
+    
+    
+            var circle_marker_22229b2dd23314fa2807623d4b764a1b = L.circleMarker(
+                [45.262613, 14.12737],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_612b3eec9cdb71399c13b54e8fc3cb64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf29710f15ceb3afa2dc38ec281f8720 = $(`<div id="html_bf29710f15ceb3afa2dc38ec281f8720" style="width: 100.0%; height: 100.0%;">Lokacija:  Istra<br>logTU: -6.97</div>`)[0];
+                popup_612b3eec9cdb71399c13b54e8fc3cb64.setContent(html_bf29710f15ceb3afa2dc38ec281f8720);
+            
+        
+
+        circle_marker_22229b2dd23314fa2807623d4b764a1b.bindPopup(popup_612b3eec9cdb71399c13b54e8fc3cb64)
+        ;
+
+        
+    
+    
+            var circle_marker_3b988c322a77c229b4c44871591adddb = L.circleMarker(
+                [45.628944, 15.301039],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_6440d00aa95f7bd4e245c573f0181a47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f6ccfc85cc1270b229593311fa8adea = $(`<div id="html_4f6ccfc85cc1270b229593311fa8adea" style="width: 100.0%; height: 100.0%;">Lokacija: Jurovo - Jurovski Brod (utok Lahinje - lijevi pritok)<br>logTU: -7.11</div>`)[0];
+                popup_6440d00aa95f7bd4e245c573f0181a47.setContent(html_4f6ccfc85cc1270b229593311fa8adea);
+            
+        
+
+        circle_marker_3b988c322a77c229b4c44871591adddb.bindPopup(popup_6440d00aa95f7bd4e245c573f0181a47)
+        ;
+
+        
+    
+    
+            var circle_marker_7b27e58d80da65bca5a220a30f262b60 = L.circleMarker(
+                [45.614388, 15.476448],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_c487992f9d48a8313e6e42071fe99d7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_485f503b0f91fe4cf7fb42969009b8da = $(`<div id="html_485f503b0f91fe4cf7fb42969009b8da" style="width: 100.0%; height: 100.0%;">Lokacija: Ozalj<br>logTU: -7.13</div>`)[0];
+                popup_c487992f9d48a8313e6e42071fe99d7b.setContent(html_485f503b0f91fe4cf7fb42969009b8da);
+            
+        
+
+        circle_marker_7b27e58d80da65bca5a220a30f262b60.bindPopup(popup_c487992f9d48a8313e6e42071fe99d7b)
+        ;
+
+        
+    
+    
+            var circle_marker_88eddb65c866c4af2e84227efb105fd8 = L.circleMarker(
+                [43.05095, 17.661434],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_93b51c358e4ad65fe54798b25d9a8fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ba07a4b11c4cc6ad803413a705d889e = $(`<div id="html_4ba07a4b11c4cc6ad803413a705d889e" style="width: 100.0%; height: 100.0%;">Lokacija: Metković-Doljani<br>logTU: -6.80</div>`)[0];
+                popup_93b51c358e4ad65fe54798b25d9a8fb7.setContent(html_4ba07a4b11c4cc6ad803413a705d889e);
+            
+        
+
+        circle_marker_88eddb65c866c4af2e84227efb105fd8.bindPopup(popup_93b51c358e4ad65fe54798b25d9a8fb7)
+        ;
+
+        
+    
+    
+            var circle_marker_432087871682e3624d730e8e5efb14cc = L.circleMarker(
+                [43.054255, 17.655278],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_8cf9da94a55de40e8de9a7c5a133b5e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62b724326e0b2d9e6475ad4947b3666f = $(`<div id="html_62b724326e0b2d9e6475ad4947b3666f" style="width: 100.0%; height: 100.0%;">Lokacija: Metković-Unka<br>logTU: -6.73</div>`)[0];
+                popup_8cf9da94a55de40e8de9a7c5a133b5e1.setContent(html_62b724326e0b2d9e6475ad4947b3666f);
+            
+        
+
+        circle_marker_432087871682e3624d730e8e5efb14cc.bindPopup(popup_8cf9da94a55de40e8de9a7c5a133b5e1)
+        ;
+
+        
+    
+    
+            var circle_marker_fb9f201a292dff417b063773815a87a8 = L.circleMarker(
+                [43.054154, 17.652171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_b99880175ede8c4147baeb4378eebc55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b974b0f4b343bcffe62edd92c9e7821f = $(`<div id="html_b974b0f4b343bcffe62edd92c9e7821f" style="width: 100.0%; height: 100.0%;">Lokacija: Metković-most<br>logTU: -5.58</div>`)[0];
+                popup_b99880175ede8c4147baeb4378eebc55.setContent(html_b974b0f4b343bcffe62edd92c9e7821f);
+            
+        
+
+        circle_marker_fb9f201a292dff417b063773815a87a8.bindPopup(popup_b99880175ede8c4147baeb4378eebc55)
+        ;
+
+        
+    
+    
+            var circle_marker_84687ac48f875df676139d5ecd740d2e = L.circleMarker(
+                [43.020129, 17.447356],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_f5582bbfe242687d48a9228163525d6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1d0f3929051fcfc58c4abdb255a722f = $(`<div id="html_d1d0f3929051fcfc58c4abdb255a722f" style="width: 100.0%; height: 100.0%;">Lokacija: ušće<br>logTU: -7.48</div>`)[0];
+                popup_f5582bbfe242687d48a9228163525d6a.setContent(html_d1d0f3929051fcfc58c4abdb255a722f);
+            
+        
+
+        circle_marker_84687ac48f875df676139d5ecd740d2e.bindPopup(popup_f5582bbfe242687d48a9228163525d6a)
+        ;
+
+        
+    
+    
+            var circle_marker_bb8f29382f53f444d4344579e33d5390 = L.circleMarker(
+                [45.446224, 17.473141000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_6492edeb307dc5716836a0fd8585c55a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35926dd3ca39729f744dd6ca08543427 = $(`<div id="html_35926dd3ca39729f744dd6ca08543427" style="width: 100.0%; height: 100.0%;">Lokacija: Mijači<br>logTU: -7.40</div>`)[0];
+                popup_6492edeb307dc5716836a0fd8585c55a.setContent(html_35926dd3ca39729f744dd6ca08543427);
+            
+        
+
+        circle_marker_bb8f29382f53f444d4344579e33d5390.bindPopup(popup_6492edeb307dc5716836a0fd8585c55a)
+        ;
+
+        
+    
+    
+            var circle_marker_9150ecf4960234090967b582b0c1f44d = L.circleMarker(
+                [45.466612, 17.506494],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_f106762fc91cb0c76216b5b1abd06f53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d25652133ad6e07d63efe910b9df6b8a = $(`<div id="html_d25652133ad6e07d63efe910b9df6b8a" style="width: 100.0%; height: 100.0%;">Lokacija: Striježevica<br>logTU: -6.70</div>`)[0];
+                popup_f106762fc91cb0c76216b5b1abd06f53.setContent(html_d25652133ad6e07d63efe910b9df6b8a);
+            
+        
+
+        circle_marker_9150ecf4960234090967b582b0c1f44d.bindPopup(popup_f106762fc91cb0c76216b5b1abd06f53)
+        ;
+
+        
+    
+    
+            var circle_marker_0b2889079ad5ad34b677b1e4548d6691 = L.circleMarker(
+                [45.444949, 16.270323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_4f3748688470d8330bc226684d38a87a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72bd5ed1984ab07a1f1ace7e8988f939 = $(`<div id="html_72bd5ed1984ab07a1f1ace7e8988f939" style="width: 100.0%; height: 100.0%;">Lokacija: Petrinja (kupalište)<br>logTU: -5.46</div>`)[0];
+                popup_4f3748688470d8330bc226684d38a87a.setContent(html_72bd5ed1984ab07a1f1ace7e8988f939);
+            
+        
+
+        circle_marker_0b2889079ad5ad34b677b1e4548d6691.bindPopup(popup_4f3748688470d8330bc226684d38a87a)
+        ;
+
+        
+    
+    
+            var circle_marker_9c298de93bed1c2f89bebb136080646e = L.circleMarker(
+                [45.470357, 16.385345],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_37772e8b3f41ffd7b400b5a9c3ac9c03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76b63761cb714c62d7350b3909119a41 = $(`<div id="html_76b63761cb714c62d7350b3909119a41" style="width: 100.0%; height: 100.0%;">Lokacija: Sisak (Stari grad)<br>logTU: -6.53</div>`)[0];
+                popup_37772e8b3f41ffd7b400b5a9c3ac9c03.setContent(html_76b63761cb714c62d7350b3909119a41);
+            
+        
+
+        circle_marker_9c298de93bed1c2f89bebb136080646e.bindPopup(popup_37772e8b3f41ffd7b400b5a9c3ac9c03)
+        ;
+
+        
+    
+    
+            var circle_marker_0d249425073aa627f0ca5eed6c6072a6 = L.circleMarker(
+                [45.47153400000001, 16.387908],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_1454ccc894d82f822a33539650e73d1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b449d77e232582295c9f0d8d589e62f = $(`<div id="html_4b449d77e232582295c9f0d8d589e62f" style="width: 100.0%; height: 100.0%;">Lokacija: Sisak (Stari grad)<br>logTU: -6.42</div>`)[0];
+                popup_1454ccc894d82f822a33539650e73d1a.setContent(html_4b449d77e232582295c9f0d8d589e62f);
+            
+        
+
+        circle_marker_0d249425073aa627f0ca5eed6c6072a6.bindPopup(popup_1454ccc894d82f822a33539650e73d1a)
+        ;
+
+        
+    
+    
+            var circle_marker_191b61d566673be818ce4d6389b3e3b6 = L.circleMarker(
+                [45.779541, 16.012931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_4c339ef01b72a1c6066f1b78c8f10b0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07255837638b8206cee025f88532ee71 = $(`<div id="html_07255837638b8206cee025f88532ee71" style="width: 100.0%; height: 100.0%;">Lokacija: Zagreb (Savski Kamenji - toplana)<br>logTU: -5.23</div>`)[0];
+                popup_4c339ef01b72a1c6066f1b78c8f10b0e.setContent(html_07255837638b8206cee025f88532ee71);
+            
+        
+
+        circle_marker_191b61d566673be818ce4d6389b3e3b6.bindPopup(popup_4c339ef01b72a1c6066f1b78c8f10b0e)
+        ;
+
+        
+    
+    
+            var circle_marker_cf50eace83d99420bf8bd79ec3d7767c = L.circleMarker(
+                [44.864727, 15.600791],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_c91f96eaf0c7d78f1aa681b9e0f4813d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_352edc6f63722b874c1e7fe385e7f140 = $(`<div id="html_352edc6f63722b874c1e7fe385e7f140" style="width: 100.0%; height: 100.0%;">Lokacija: Prošćansko jezero<br>logTU: -7.13</div>`)[0];
+                popup_c91f96eaf0c7d78f1aa681b9e0f4813d.setContent(html_352edc6f63722b874c1e7fe385e7f140);
+            
+        
+
+        circle_marker_cf50eace83d99420bf8bd79ec3d7767c.bindPopup(popup_c91f96eaf0c7d78f1aa681b9e0f4813d)
+        ;
+
+        
+    
+    
+            var circle_marker_b56ab6d81543eb653258bc78c852eb93 = L.circleMarker(
+                [45.420562, 15.482801],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_66ef0da3d55b3c69525f969af6f8abba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_175c963380ed030f98b96e856a2eb298 = $(`<div id="html_175c963380ed030f98b96e856a2eb298" style="width: 100.0%; height: 100.0%;">Lokacija: Belavići-kamp Slapić<br>logTU: -7.66</div>`)[0];
+                popup_66ef0da3d55b3c69525f969af6f8abba.setContent(html_175c963380ed030f98b96e856a2eb298);
+            
+        
+
+        circle_marker_b56ab6d81543eb653258bc78c852eb93.bindPopup(popup_66ef0da3d55b3c69525f969af6f8abba)
+        ;
+
+        
+    
+    
+            var circle_marker_184af9ba926572983cdfc0ae8d7bf48f = L.circleMarker(
+                [45.445093, 15.504593],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_f14dd2377401a19db0fe8f6cfb7d39bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e08827c0d89fa05875123146e628cfc1 = $(`<div id="html_e08827c0d89fa05875123146e628cfc1" style="width: 100.0%; height: 100.0%;">Lokacija: Duga Resa-gradsko kupalište<br>logTU: -6.97</div>`)[0];
+                popup_f14dd2377401a19db0fe8f6cfb7d39bf.setContent(html_e08827c0d89fa05875123146e628cfc1);
+            
+        
+
+        circle_marker_184af9ba926572983cdfc0ae8d7bf48f.bindPopup(popup_f14dd2377401a19db0fe8f6cfb7d39bf)
+        ;
+
+        
+    
+    
+            var circle_marker_3d6e5ee8f60c5388d4bfdd27a6d1ec42 = L.circleMarker(
+                [45.428927, 15.190848],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_cf42a44c48a3ca556d4d869e6bb96ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d69b976f50a520b7787f67f3287b03b0 = $(`<div id="html_d69b976f50a520b7787f67f3287b03b0" style="width: 100.0%; height: 100.0%;">Lokacija: Severin na Kupi-kupalište Klanac<br>logTU: -6.95</div>`)[0];
+                popup_cf42a44c48a3ca556d4d869e6bb96ac9.setContent(html_d69b976f50a520b7787f67f3287b03b0);
+            
+        
+
+        circle_marker_3d6e5ee8f60c5388d4bfdd27a6d1ec42.bindPopup(popup_cf42a44c48a3ca556d4d869e6bb96ac9)
+        ;
+
+        
+    
+    
+            var circle_marker_8b1aa2ae9c73f2e9406c21247c8cfd09 = L.circleMarker(
+                [45.614723, 15.479833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_4c0f37a26d5fa93814898f7d0244d18d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18e90f765c9ee4ee4b4283d3f8ce4cab = $(`<div id="html_18e90f765c9ee4ee4b4283d3f8ce4cab" style="width: 100.0%; height: 100.0%;">Lokacija: Ozalj-gradsko kupalište<br>logTU: -7.10</div>`)[0];
+                popup_4c0f37a26d5fa93814898f7d0244d18d.setContent(html_18e90f765c9ee4ee4b4283d3f8ce4cab);
+            
+        
+
+        circle_marker_8b1aa2ae9c73f2e9406c21247c8cfd09.bindPopup(popup_4c0f37a26d5fa93814898f7d0244d18d)
+        ;
+
+        
+    
+    
+            var circle_marker_be26114b0605ceca900310c758fa9558 = L.circleMarker(
+                [45.121145, 15.589586],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_3e2f8f37e11bf8a3cf336f522c1f5e1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74a56abf0c91513546b9b573f198a577 = $(`<div id="html_74a56abf0c91513546b9b573f198a577" style="width: 100.0%; height: 100.0%;">Lokacija: Slunj-kupalište Rastoke<br>logTU: -7.90</div>`)[0];
+                popup_3e2f8f37e11bf8a3cf336f522c1f5e1c.setContent(html_74a56abf0c91513546b9b573f198a577);
+            
+        
+
+        circle_marker_be26114b0605ceca900310c758fa9558.bindPopup(popup_3e2f8f37e11bf8a3cf336f522c1f5e1c)
+        ;
+
+        
+    
+    
+            var circle_marker_fffbd395c19cffce83873bf8d601283d = L.circleMarker(
+                [45.484183, 15.559342],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_7488abad439113fea4d947620d299703);
+        
+    
+        var popup_3b6a19cbca3b7b9ab10d4e3d9aec8d06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ded491f0866c9229e1237fe0a876f7d = $(`<div id="html_6ded491f0866c9229e1237fe0a876f7d" style="width: 100.0%; height: 100.0%;">Lokacija: Karlovac-Foginovo kupalište<br>logTU: -6.86</div>`)[0];
+                popup_3b6a19cbca3b7b9ab10d4e3d9aec8d06.setContent(html_6ded491f0866c9229e1237fe0a876f7d);
+            
+        
+
+        circle_marker_fffbd395c19cffce83873bf8d601283d.bindPopup(popup_3b6a19cbca3b7b9ab10d4e3d9aec8d06)
+        ;
+
+        
+    
+</script>
