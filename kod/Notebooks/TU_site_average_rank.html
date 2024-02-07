@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_77c697ca9ed371e0fc546c8a0cf69dd6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_77c697ca9ed371e0fc546c8a0cf69dd6" ></div>
+        
+</body>
+<script>    
+    
+            var map_77c697ca9ed371e0fc546c8a0cf69dd6 = L.map(
+                "map_77c697ca9ed371e0fc546c8a0cf69dd6",
+                {
+                    center: [45.12004824999999, 15.854103321428571],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47c6c33c6c41c5bdc2daf18a69050b12 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+            var circle_marker_ec966d3a4d86d95acda5bf516823ea88 = L.circleMarker(
+                [45.47773400000001, 14.806545000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_54848c22b971dce229dd1611bd873b4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3c6375e69003124c9904a22fd12f24f = $(`<div id="html_b3c6375e69003124c9904a22fd12f24f" style="width: 100.0%; height: 100.0%;">Lokacija: 0<br>Prosj. rang toksičnosti: 5.00</div>`)[0];
+                popup_54848c22b971dce229dd1611bd873b4d.setContent(html_b3c6375e69003124c9904a22fd12f24f);
+            
+        
+
+        circle_marker_ec966d3a4d86d95acda5bf516823ea88.bindPopup(popup_54848c22b971dce229dd1611bd873b4d)
+        ;
+
+        
+    
+    
+            var circle_marker_d76f8535edea50cc99aee5f02d2e3675 = L.circleMarker(
+                [45.447729, 14.853218],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_aa16c6cade84a5539daefe02e61cf8ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5d3e439e1ed7a2766a8da4101c31032 = $(`<div id="html_f5d3e439e1ed7a2766a8da4101c31032" style="width: 100.0%; height: 100.0%;">Lokacija: 1<br>Prosj. rang toksičnosti: 10.67</div>`)[0];
+                popup_aa16c6cade84a5539daefe02e61cf8ac.setContent(html_f5d3e439e1ed7a2766a8da4101c31032);
+            
+        
+
+        circle_marker_d76f8535edea50cc99aee5f02d2e3675.bindPopup(popup_aa16c6cade84a5539daefe02e61cf8ac)
+        ;
+
+        
+    
+    
+            var circle_marker_c329a625eabfb62dcd1a96c30072544b = L.circleMarker(
+                [45.49634, 15.551701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_58ef86fa6d38acc1cb8e7c2e935de995 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ff752f11e21a13bce87c75bed61d7f = $(`<div id="html_05ff752f11e21a13bce87c75bed61d7f" style="width: 100.0%; height: 100.0%;">Lokacija: 2<br>Prosj. rang toksičnosti: 1.67</div>`)[0];
+                popup_58ef86fa6d38acc1cb8e7c2e935de995.setContent(html_05ff752f11e21a13bce87c75bed61d7f);
+            
+        
+
+        circle_marker_c329a625eabfb62dcd1a96c30072544b.bindPopup(popup_58ef86fa6d38acc1cb8e7c2e935de995)
+        ;
+
+        
+    
+    
+            var circle_marker_9229d55cbd9c2cfe93485e2aa2b98d46 = L.circleMarker(
+                [45.500745, 15.575217000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_c8208a0f0cffc7ea35c61b52894bdb03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb422e3fffa281399d470855c6c0f61d = $(`<div id="html_fb422e3fffa281399d470855c6c0f61d" style="width: 100.0%; height: 100.0%;">Lokacija: 3<br>Prosj. rang toksičnosti: 16.67</div>`)[0];
+                popup_c8208a0f0cffc7ea35c61b52894bdb03.setContent(html_fb422e3fffa281399d470855c6c0f61d);
+            
+        
+
+        circle_marker_9229d55cbd9c2cfe93485e2aa2b98d46.bindPopup(popup_c8208a0f0cffc7ea35c61b52894bdb03)
+        ;
+
+        
+    
+    
+            var circle_marker_ff7e56de0df06ed9d1c0010aee18cc32 = L.circleMarker(
+                [45.560677, 15.737882999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_f46013535ca984fdbbe37b462d1a1ba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8cc4e2586f94e390198838bf4f0d4a4 = $(`<div id="html_e8cc4e2586f94e390198838bf4f0d4a4" style="width: 100.0%; height: 100.0%;">Lokacija: 4<br>Prosj. rang toksičnosti: 26.33</div>`)[0];
+                popup_f46013535ca984fdbbe37b462d1a1ba8.setContent(html_e8cc4e2586f94e390198838bf4f0d4a4);
+            
+        
+
+        circle_marker_ff7e56de0df06ed9d1c0010aee18cc32.bindPopup(popup_f46013535ca984fdbbe37b462d1a1ba8)
+        ;
+
+        
+    
+    
+            var circle_marker_13c96de0a850ca7c341f95247fc62866 = L.circleMarker(
+                [45.975335, 15.939998999999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_96981c4a372d7643c9afb22a9c2c8314 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4fbcb20525330f4135b0f00a28f7519 = $(`<div id="html_e4fbcb20525330f4135b0f00a28f7519" style="width: 100.0%; height: 100.0%;">Lokacija: 5<br>Prosj. rang toksičnosti: 7.67</div>`)[0];
+                popup_96981c4a372d7643c9afb22a9c2c8314.setContent(html_e4fbcb20525330f4135b0f00a28f7519);
+            
+        
+
+        circle_marker_13c96de0a850ca7c341f95247fc62866.bindPopup(popup_96981c4a372d7643c9afb22a9c2c8314)
+        ;
+
+        
+    
+    
+            var circle_marker_5c122e44473f94b52f359c67ee44758f = L.circleMarker(
+                [45.357614, 13.737685999999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_ab13802b40fe7395d47af5a3c101f808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76eea549e2af0be3577449cacc6f0706 = $(`<div id="html_76eea549e2af0be3577449cacc6f0706" style="width: 100.0%; height: 100.0%;">Lokacija: 6<br>Prosj. rang toksičnosti: 22.67</div>`)[0];
+                popup_ab13802b40fe7395d47af5a3c101f808.setContent(html_76eea549e2af0be3577449cacc6f0706);
+            
+        
+
+        circle_marker_5c122e44473f94b52f359c67ee44758f.bindPopup(popup_ab13802b40fe7395d47af5a3c101f808)
+        ;
+
+        
+    
+    
+            var circle_marker_9d1e6a44a1685fc3c66975fbfb7f433e = L.circleMarker(
+                [45.401167, 13.947612],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_d7fb7a52b2d30370e2e726a9e6562573 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a26947ae86aac2c2f8e66224165703f8 = $(`<div id="html_a26947ae86aac2c2f8e66224165703f8" style="width: 100.0%; height: 100.0%;">Lokacija: 7<br>Prosj. rang toksičnosti: 10.67</div>`)[0];
+                popup_d7fb7a52b2d30370e2e726a9e6562573.setContent(html_a26947ae86aac2c2f8e66224165703f8);
+            
+        
+
+        circle_marker_9d1e6a44a1685fc3c66975fbfb7f433e.bindPopup(popup_d7fb7a52b2d30370e2e726a9e6562573)
+        ;
+
+        
+    
+    
+            var circle_marker_30a38224f5b7f3288d005e122f4d4f22 = L.circleMarker(
+                [45.262613, 14.12737],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_8578442a1a523aac798fdc9ab04f0e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_741256317e9bce782685d736f4b4e7a3 = $(`<div id="html_741256317e9bce782685d736f4b4e7a3" style="width: 100.0%; height: 100.0%;">Lokacija: 8<br>Prosj. rang toksičnosti: 16.00</div>`)[0];
+                popup_8578442a1a523aac798fdc9ab04f0e10.setContent(html_741256317e9bce782685d736f4b4e7a3);
+            
+        
+
+        circle_marker_30a38224f5b7f3288d005e122f4d4f22.bindPopup(popup_8578442a1a523aac798fdc9ab04f0e10)
+        ;
+
+        
+    
+    
+            var circle_marker_d77e48efe70ae84e120b922e11fcbf45 = L.circleMarker(
+                [45.628944, 15.301039],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_15fdc4b8ecf8a41b5cc97b0826c66512 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ccfc505ea851577e8a8d39c3b84f8c4 = $(`<div id="html_4ccfc505ea851577e8a8d39c3b84f8c4" style="width: 100.0%; height: 100.0%;">Lokacija: 9<br>Prosj. rang toksičnosti: 20.00</div>`)[0];
+                popup_15fdc4b8ecf8a41b5cc97b0826c66512.setContent(html_4ccfc505ea851577e8a8d39c3b84f8c4);
+            
+        
+
+        circle_marker_d77e48efe70ae84e120b922e11fcbf45.bindPopup(popup_15fdc4b8ecf8a41b5cc97b0826c66512)
+        ;
+
+        
+    
+    
+            var circle_marker_658aa6b4a968ead5d36557677e016644 = L.circleMarker(
+                [45.614388, 15.476448],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_8da1f70d43865fde51d61c4f9522f6a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcfd7aa2d43b04cb0bdcc91e2e245d99 = $(`<div id="html_bcfd7aa2d43b04cb0bdcc91e2e245d99" style="width: 100.0%; height: 100.0%;">Lokacija: 10<br>Prosj. rang toksičnosti: 22.00</div>`)[0];
+                popup_8da1f70d43865fde51d61c4f9522f6a8.setContent(html_bcfd7aa2d43b04cb0bdcc91e2e245d99);
+            
+        
+
+        circle_marker_658aa6b4a968ead5d36557677e016644.bindPopup(popup_8da1f70d43865fde51d61c4f9522f6a8)
+        ;
+
+        
+    
+    
+            var circle_marker_8f5ef3808930c5dce3350edc3843a81d = L.circleMarker(
+                [43.05095, 17.661434],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_4982c87de1d8351e17f7d914ac6035f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb098ad4dd282513b1aae728e46965c6 = $(`<div id="html_cb098ad4dd282513b1aae728e46965c6" style="width: 100.0%; height: 100.0%;">Lokacija: 11<br>Prosj. rang toksičnosti: 12.00</div>`)[0];
+                popup_4982c87de1d8351e17f7d914ac6035f1.setContent(html_cb098ad4dd282513b1aae728e46965c6);
+            
+        
+
+        circle_marker_8f5ef3808930c5dce3350edc3843a81d.bindPopup(popup_4982c87de1d8351e17f7d914ac6035f1)
+        ;
+
+        
+    
+    
+            var circle_marker_9a314c6c8027f17606556a4ed000957e = L.circleMarker(
+                [43.054255, 17.655278],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_e1630e1bbc2c13b76610e289494d5bed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea10b8bfec07b1a71f0a8a3312c0aad1 = $(`<div id="html_ea10b8bfec07b1a71f0a8a3312c0aad1" style="width: 100.0%; height: 100.0%;">Lokacija: 12<br>Prosj. rang toksičnosti: 11.00</div>`)[0];
+                popup_e1630e1bbc2c13b76610e289494d5bed.setContent(html_ea10b8bfec07b1a71f0a8a3312c0aad1);
+            
+        
+
+        circle_marker_9a314c6c8027f17606556a4ed000957e.bindPopup(popup_e1630e1bbc2c13b76610e289494d5bed)
+        ;
+
+        
+    
+    
+            var circle_marker_d212d4bc68d6345c3306d8f1e4cc6e09 = L.circleMarker(
+                [43.054154, 17.652171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_56d5d094cf574aecfcae123a4b9fbb01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_548c438a1bf003d44ec7709165a491b9 = $(`<div id="html_548c438a1bf003d44ec7709165a491b9" style="width: 100.0%; height: 100.0%;">Lokacija: 13<br>Prosj. rang toksičnosti: 4.00</div>`)[0];
+                popup_56d5d094cf574aecfcae123a4b9fbb01.setContent(html_548c438a1bf003d44ec7709165a491b9);
+            
+        
+
+        circle_marker_d212d4bc68d6345c3306d8f1e4cc6e09.bindPopup(popup_56d5d094cf574aecfcae123a4b9fbb01)
+        ;
+
+        
+    
+    
+            var circle_marker_d28a1a0b368185471bb20c0b1051c3a8 = L.circleMarker(
+                [43.020129, 17.447356],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_b2a0a67de7d8b14d0279f59976bcf526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2509d404712253ca9cbba06813f01a4 = $(`<div id="html_e2509d404712253ca9cbba06813f01a4" style="width: 100.0%; height: 100.0%;">Lokacija: 14<br>Prosj. rang toksičnosti: 25.33</div>`)[0];
+                popup_b2a0a67de7d8b14d0279f59976bcf526.setContent(html_e2509d404712253ca9cbba06813f01a4);
+            
+        
+
+        circle_marker_d28a1a0b368185471bb20c0b1051c3a8.bindPopup(popup_b2a0a67de7d8b14d0279f59976bcf526)
+        ;
+
+        
+    
+    
+            var circle_marker_ec5641c4a1bdf0edb6331a084f6ccf0e = L.circleMarker(
+                [45.446224, 17.473141000000002],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_e51ef37692fb7d0c0f9e0991d9445f9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30fb62a8977ac6201671f0f17f2981b2 = $(`<div id="html_30fb62a8977ac6201671f0f17f2981b2" style="width: 100.0%; height: 100.0%;">Lokacija: 15<br>Prosj. rang toksičnosti: 24.00</div>`)[0];
+                popup_e51ef37692fb7d0c0f9e0991d9445f9e.setContent(html_30fb62a8977ac6201671f0f17f2981b2);
+            
+        
+
+        circle_marker_ec5641c4a1bdf0edb6331a084f6ccf0e.bindPopup(popup_e51ef37692fb7d0c0f9e0991d9445f9e)
+        ;
+
+        
+    
+    
+            var circle_marker_bfe52c5801f7032cc3dd8e96ac82a446 = L.circleMarker(
+                [45.466612, 17.506494],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_ea655273029bbb2be4961940665f68a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b269b7b56432227309f2def396e221f3 = $(`<div id="html_b269b7b56432227309f2def396e221f3" style="width: 100.0%; height: 100.0%;">Lokacija: 16<br>Prosj. rang toksičnosti: 11.33</div>`)[0];
+                popup_ea655273029bbb2be4961940665f68a3.setContent(html_b269b7b56432227309f2def396e221f3);
+            
+        
+
+        circle_marker_bfe52c5801f7032cc3dd8e96ac82a446.bindPopup(popup_ea655273029bbb2be4961940665f68a3)
+        ;
+
+        
+    
+    
+            var circle_marker_6db258ab8d549fccc66635b5ff1f14ca = L.circleMarker(
+                [45.444949, 16.270323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_1b5f7dce5efce8f37a364cd4255bcfc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ba3834c945297dae30e8c7e41009f1c = $(`<div id="html_3ba3834c945297dae30e8c7e41009f1c" style="width: 100.0%; height: 100.0%;">Lokacija: 17<br>Prosj. rang toksičnosti: 3.00</div>`)[0];
+                popup_1b5f7dce5efce8f37a364cd4255bcfc2.setContent(html_3ba3834c945297dae30e8c7e41009f1c);
+            
+        
+
+        circle_marker_6db258ab8d549fccc66635b5ff1f14ca.bindPopup(popup_1b5f7dce5efce8f37a364cd4255bcfc2)
+        ;
+
+        
+    
+    
+            var circle_marker_fd4f363f21ab6f3d3b6ccb229a0c6762 = L.circleMarker(
+                [45.470357, 16.385345],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_2261cc37b3fb7d05955d3c386128dbf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b49d23bc6080c8d241efaa7f679e21d = $(`<div id="html_3b49d23bc6080c8d241efaa7f679e21d" style="width: 100.0%; height: 100.0%;">Lokacija: 18<br>Prosj. rang toksičnosti: 7.33</div>`)[0];
+                popup_2261cc37b3fb7d05955d3c386128dbf0.setContent(html_3b49d23bc6080c8d241efaa7f679e21d);
+            
+        
+
+        circle_marker_fd4f363f21ab6f3d3b6ccb229a0c6762.bindPopup(popup_2261cc37b3fb7d05955d3c386128dbf0)
+        ;
+
+        
+    
+    
+            var circle_marker_c986ec7f7467f521ecc2d4e470bb37b4 = L.circleMarker(
+                [45.47153400000001, 16.387908],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_b15c9351c50d5e997f0ddea8d08a6346 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22ad43c4c39ff4e700f0b46be8314106 = $(`<div id="html_22ad43c4c39ff4e700f0b46be8314106" style="width: 100.0%; height: 100.0%;">Lokacija: 19<br>Prosj. rang toksičnosti: 6.00</div>`)[0];
+                popup_b15c9351c50d5e997f0ddea8d08a6346.setContent(html_22ad43c4c39ff4e700f0b46be8314106);
+            
+        
+
+        circle_marker_c986ec7f7467f521ecc2d4e470bb37b4.bindPopup(popup_b15c9351c50d5e997f0ddea8d08a6346)
+        ;
+
+        
+    
+    
+            var circle_marker_f543768aff08e76e7e64e272c19f6bfd = L.circleMarker(
+                [45.779541, 16.012931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_d0dc5062ea64fb2211606871d7699400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50ce3be0629fef215202b5f761f82c44 = $(`<div id="html_50ce3be0629fef215202b5f761f82c44" style="width: 100.0%; height: 100.0%;">Lokacija: 20<br>Prosj. rang toksičnosti: 1.33</div>`)[0];
+                popup_d0dc5062ea64fb2211606871d7699400.setContent(html_50ce3be0629fef215202b5f761f82c44);
+            
+        
+
+        circle_marker_f543768aff08e76e7e64e272c19f6bfd.bindPopup(popup_d0dc5062ea64fb2211606871d7699400)
+        ;
+
+        
+    
+    
+            var circle_marker_7035bdf10de70a8fecf05b70276ee373 = L.circleMarker(
+                [44.864727, 15.600791],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_f427b0b4d2ea73318da085fc7c77de99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a56a984b4974f3f193baed0890f5765 = $(`<div id="html_0a56a984b4974f3f193baed0890f5765" style="width: 100.0%; height: 100.0%;">Lokacija: 21<br>Prosj. rang toksičnosti: 21.00</div>`)[0];
+                popup_f427b0b4d2ea73318da085fc7c77de99.setContent(html_0a56a984b4974f3f193baed0890f5765);
+            
+        
+
+        circle_marker_7035bdf10de70a8fecf05b70276ee373.bindPopup(popup_f427b0b4d2ea73318da085fc7c77de99)
+        ;
+
+        
+    
+    
+            var circle_marker_e30510d53551b9cc787a0aa14d3129e9 = L.circleMarker(
+                [45.420562, 15.482801],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_2ff6102c925d0fa3b9ddd515b2894100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33cf43945c0c1c775e3ddd9bd4a28a43 = $(`<div id="html_33cf43945c0c1c775e3ddd9bd4a28a43" style="width: 100.0%; height: 100.0%;">Lokacija: 22<br>Prosj. rang toksičnosti: 26.33</div>`)[0];
+                popup_2ff6102c925d0fa3b9ddd515b2894100.setContent(html_33cf43945c0c1c775e3ddd9bd4a28a43);
+            
+        
+
+        circle_marker_e30510d53551b9cc787a0aa14d3129e9.bindPopup(popup_2ff6102c925d0fa3b9ddd515b2894100)
+        ;
+
+        
+    
+    
+            var circle_marker_a1e10e87626bac99c8264853eef54c6e = L.circleMarker(
+                [45.445093, 15.504593],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_16a4a0aceb208149046c81f3772974cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbd0e4f2a760a128516ee928a367230a = $(`<div id="html_bbd0e4f2a760a128516ee928a367230a" style="width: 100.0%; height: 100.0%;">Lokacija: 23<br>Prosj. rang toksičnosti: 17.33</div>`)[0];
+                popup_16a4a0aceb208149046c81f3772974cd.setContent(html_bbd0e4f2a760a128516ee928a367230a);
+            
+        
+
+        circle_marker_a1e10e87626bac99c8264853eef54c6e.bindPopup(popup_16a4a0aceb208149046c81f3772974cd)
+        ;
+
+        
+    
+    
+            var circle_marker_6e9f20040579d8e79be95b84226da0b4 = L.circleMarker(
+                [45.428927, 15.190848],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_fcf5ef9f540590fc8bd7e27dfcbc5513 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb6306542f69b82010504fc5e0c4c909 = $(`<div id="html_cb6306542f69b82010504fc5e0c4c909" style="width: 100.0%; height: 100.0%;">Lokacija: 24<br>Prosj. rang toksičnosti: 15.67</div>`)[0];
+                popup_fcf5ef9f540590fc8bd7e27dfcbc5513.setContent(html_cb6306542f69b82010504fc5e0c4c909);
+            
+        
+
+        circle_marker_6e9f20040579d8e79be95b84226da0b4.bindPopup(popup_fcf5ef9f540590fc8bd7e27dfcbc5513)
+        ;
+
+        
+    
+    
+            var circle_marker_2aac30a435d17973a18933b32bf89f8a = L.circleMarker(
+                [45.614723, 15.479833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_e30742617d6055fec0767992471a9102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3530127d5feeec29fbaa4b207268a1cb = $(`<div id="html_3530127d5feeec29fbaa4b207268a1cb" style="width: 100.0%; height: 100.0%;">Lokacija: 25<br>Prosj. rang toksičnosti: 18.33</div>`)[0];
+                popup_e30742617d6055fec0767992471a9102.setContent(html_3530127d5feeec29fbaa4b207268a1cb);
+            
+        
+
+        circle_marker_2aac30a435d17973a18933b32bf89f8a.bindPopup(popup_e30742617d6055fec0767992471a9102)
+        ;
+
+        
+    
+    
+            var circle_marker_be0347fdd4968754590f95dd6c50096c = L.circleMarker(
+                [45.121145, 15.589586],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_6064ed829bf510eb10f1866c0adea69f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2c33241a9de216d57aa07dac4468ad2 = $(`<div id="html_c2c33241a9de216d57aa07dac4468ad2" style="width: 100.0%; height: 100.0%;">Lokacija: 26<br>Prosj. rang toksičnosti: 28.00</div>`)[0];
+                popup_6064ed829bf510eb10f1866c0adea69f.setContent(html_c2c33241a9de216d57aa07dac4468ad2);
+            
+        
+
+        circle_marker_be0347fdd4968754590f95dd6c50096c.bindPopup(popup_6064ed829bf510eb10f1866c0adea69f)
+        ;
+
+        
+    
+    
+            var circle_marker_e162c0df6ff83ec793379e534895234c = L.circleMarker(
+                [45.484183, 15.559342],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_77c697ca9ed371e0fc546c8a0cf69dd6);
+        
+    
+        var popup_7da7e56bed3fe60af5aa58ac7e88d086 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_621c528a1e237267c71a7f88af42995d = $(`<div id="html_621c528a1e237267c71a7f88af42995d" style="width: 100.0%; height: 100.0%;">Lokacija: 27<br>Prosj. rang toksičnosti: 14.67</div>`)[0];
+                popup_7da7e56bed3fe60af5aa58ac7e88d086.setContent(html_621c528a1e237267c71a7f88af42995d);
+            
+        
+
+        circle_marker_e162c0df6ff83ec793379e534895234c.bindPopup(popup_7da7e56bed3fe60af5aa58ac7e88d086)
+        ;
+
+        
+    
+</script>

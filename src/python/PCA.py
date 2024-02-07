@@ -73,7 +73,8 @@ def pca_3d(df):
         fig.show()
         
         
-        
+
+    
 def kmeans_3d(df, broj_klastera):
     df = df.reset_index()
     
@@ -82,12 +83,16 @@ def kmeans_3d(df, broj_klastera):
     klasteri = kmeans.fit_predict(df[['PC1','PC2','PC3']])
     df['Klaster'] = klasteri
     
+    # Dodavanje 1 svakom klasteru
+
+    df['Klaster'] += 1
+    
     # Vizualizacija
     fig = px.scatter_3d(df, x='PC1', y='PC2', z='PC3', hover_name='polutant', color='Klaster')
-    fig.update_layout(autosize=False, width=800, height=800)
+    fig.update_layout(autosize=False, width=900, height=850)
     fig.show()
-    
-    return df
+    return df, fig
+
 
         
         

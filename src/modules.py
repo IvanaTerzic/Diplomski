@@ -19,6 +19,9 @@ import matplotlib as mpl
 import seaborn as sns
 
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+import plotly.io as pio
 
 import geopandas as gpd
 import folium
@@ -30,3 +33,8 @@ from rdkit import Chem
 from rdkit.Chem import AllChem, Draw, Descriptors
 
 from scipy.cluster.hierarchy import dendrogram, linkage
+
+import openpyxl
+import kaleido
+
+

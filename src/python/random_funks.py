@@ -88,7 +88,7 @@ def plot_boxplot(data, start_col_index, end_col_index=None, id_var_column='LOKAC
     - id_var_column: Naziv kolone koja se koristi kao identifikator (default je 'LOKACIJA').
 
     Povratna vrijednost:
-    - Nema povratne vrijednosti. Funkcija direktno prikazuje boxplot.
+    - Vraća Plotly Figure objekt.
     """
     
     # Filtrira kolone iz ulaznog DataFrame-a koristeći iloc
@@ -105,10 +105,11 @@ def plot_boxplot(data, start_col_index, end_col_index=None, id_var_column='LOKAC
     fig = px.box(df_melted, x='Spoj', y='Koncentracija', hover_data=[id_var_column, 'RIJEKA'])
     
     # Postavlja dimenzije grafika (u pikselima)
-    fig.update_layout(width=1000, height=400)
+    fig.update_layout(width=1000, height=500)
     
-    # Prikazuje boxplot
-    fig.show()
+    # Vraća Figure objekt umjesto prikazivanja
+    return fig
+
     
 def plot_boxplot_toks(data, start_col_index, end_col_index=None, id_var_column='LOKACIJA'):
     """
@@ -121,27 +122,41 @@ def plot_boxplot_toks(data, start_col_index, end_col_index=None, id_var_column='
     - id_var_column: Naziv kolone koja se koristi kao identifikator (default je 'LOKACIJA').
 
     Povratna vrijednost:
-    - Nema povratne vrijednosti. Funkcija direktno prikazuje boxplot.
+    - Vraća figuru Plotly.
     """
-    
     # Filtrira kolone iz ulaznog DataFrame-a koristeći iloc
     filtered_data = data.iloc[:, start_col_index:end_col_index]
     
-    # Dodaje kolone za identifikaciju, u ovom slučaju 'LOKACIJA' i 'RIJEKA'
+    # Dodaje kolone za identifikaciju
     filtered_data[id_var_column] = data[id_var_column]
-    filtered_data['RIJEKA'] = data['RIJEKA']
     
     # Pretvara DataFrame u 'long' format koristeći funkciju `melt`
-    df_melted = filtered_data.melt(id_vars=[id_var_column, 'RIJEKA'], var_name='Spoj', value_name='TU_sed')
+    df_melted = filtered_data.melt(id_vars=id_var_column, var_name='Spoj', value_name='TU_sed')
     
-    # Kreira boxplot koristeći Plotly Express, sa dodatnim podacima o 'LOKACIJI' i 'RIJECI' kao hover informacijama
-    fig = px.box(df_melted, x='Spoj', y='TU_sed', hover_data=[id_var_column, 'RIJEKA'])
-    
-    # Postavlja dimenzije grafika (u pikselima)
+    # Kreira boxplot koristeći Plotly Express
+    fig = px.box(df_melted, x='Spoj', y='TU_sed')
     fig.update_layout(width=1000, height=400)
     
-    # Prikazuje boxplot
-    fig.show()
+    return fig
+
+def plot_boxplot_for_spoj(fig, data_list, spoj, model_names, colors=['blue', 'red', 'green'], row=1, box_width=0.15):
+    for i, df in enumerate(data_list):
+        spoj_data = df[spoj]
+        model_label = model_names[i]
+
+        # Izvlačenje podataka o rijeci i lokaciji za svaku molekulu
+        lokacija_data = df['LOKACIJA']
+        rijeka_data = df['RIJEKA']
+
+        # Kreiranje hover teksta s TU_sed prikazanim na dva decimalna mjesta
+        hover_texts = [f"Spoj: {spoj}<br>TU_sed: {value:.2e}<br>Lokacija: {lokacija}<br>Rijeka: {rijeka}"
+                       for value, lokacija, rijeka in zip(spoj_data, lokacija_data, rijeka_data)]
+
+        fig.add_trace(go.Box(y=spoj_data, x=[f"{spoj} {model_label}" for _ in range(len(spoj_data))], 
+                             name=f"{spoj} {model_label}", marker_color=colors[i], width=box_width,
+                             hovertext=hover_texts, hoverinfo="text"),
+                      row=row, col=1)
+    return fig
 
 
 def zamijeni_nazive_molekula(report_df):
