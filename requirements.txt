@@ -5,6 +5,7 @@ defaults
 matplotlib
 certifi
 cycler
+cartopy
 joblib
 kiwisolver
 numpy
