@@ -159,6 +159,29 @@ def plot_boxplot_for_spoj(fig, data_list, spoj, model_names, colors=['blue', 're
     return fig
 
 
+
+def plot_boxplot_for_spoj_log(fig, data_list, spoj, model_names, colors=['blue', 'red', 'green'], row=1, box_width=0.15):
+    for i, df in enumerate(data_list):
+        # Pretpostavljamo da df[spoj] sadrži vrijednosti koje želimo logaritmirati
+        # Koristimo np.log10 za izračun logaritma (bazni logaritam 10); za prirodni log koristite np.log
+        spoj_data = np.log10(df[spoj].replace(0, np.nan).dropna())  # Zamjena 0 s np.nan kako bi izbjegli log(0), zatim odbacivanje NaN
+        
+        model_label = model_names[i]
+        
+        lokacija_data = df['LOKACIJA']
+        rijeka_data = df['RIJEKA']
+
+        hover_texts = [f"Spoj: {spoj}<br>Log TU_sed: {value:.2f}<br>Lokacija: {lokacija}<br>Rijeka: {rijeka}"
+                       for value, lokacija, rijeka in zip(spoj_data, lokacija_data, rijeka_data)]
+
+        fig.add_trace(go.Box(y=spoj_data, x=[f"{spoj} {model_label}" for _ in range(len(spoj_data))], 
+                             name=f"{spoj} {model_label}", marker_color=colors[i], width=box_width,
+                             hovertext=hover_texts, hoverinfo="text"),
+                      row=row, col=1)
+    return fig
+
+
+
 def zamijeni_nazive_molekula(report_df):
     # Definiranje zamjena
     zamjene = {
