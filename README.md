@@ -66,5 +66,5 @@ Here's a brief description of each Jupyter notebook in repository:
 For any queries related to this research, please contact me at ivananad2@gmail.com.
 
 ## Acknowledgments
-I would like to thank Mario Lovrić, Snježana Herceg Romanić and Šime Ukić for their guidance and support throughout this research.
+I would like to thank doc. dr. sc. Mario Lovrić, dr. sc. Snježana Herceg Romanić and prof. dr. sc. Šime Ukić for their guidance and support throughout this research.
 
